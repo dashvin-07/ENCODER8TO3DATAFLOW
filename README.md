@@ -35,21 +35,47 @@ Logical circuit of the above expressions is given below:
 Figure 02  Encoder 8 * 3
 
 **Procedure**
+STEP-1 Define Inputs and Outputs
 
-/* write all the steps invloved */
+STEP-2 Understand the Encoder Functionality
+
+STEP-3 Design the Functional Table
+
+STEP-4 Write Verilog Code
+
+STEP-5 Verify Verilog Code
+
+STEP-6 Synthesize the Design
+
+STEP-7 Implement in FPGA
+
+STEP-8 Verify Functionality on FPGA
 
 **PROGRAM**
 
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:
+Developed by: Dashvin S
+RegisterNumber: 24901048
+```
+module enco_deco(din,a,b,c);
+ input [0:7]din;
+ output a,b,c;
+ assign a=(din[4]|din[5]|din[6]|din[7]);
+ assign b=(din[2]|din[3]|din[6]|din[7]);
+ assign c=(din[1]|din[3]|din[5]|din[7]);
+ endmodule
+```
 */
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+![logic encoder 8-3](https://github.com/user-attachments/assets/e8b01973-e800-4339-be00-7ee85e5184c5)
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+![diagram encoder 8-3](https://github.com/user-attachments/assets/c18812e9-b095-4889-bb2f-674f5f6d3369)
 
 **RESULTS**
+hus the given experiment is completed successfully
 
 
 
